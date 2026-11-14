@@ -1,0 +1,14 @@
+<div class="category-management-container">
+  <div class="creation-box">
+    @if (!showCreateForm) {
+      <button (click)="onClickCreate()" class="btn btn-primary">Kategorie erstellen</button>
+    } @else {
+      <app-product-category-create
+        [categories]="categoryList()"
+        (categoryCreated)="onCategoryCreated($event)"
+      ></app-product-category-create>
+    }
+  </div>
+
+  <app-product-category-list [categoryList]="categoryList()"></app-product-category-list>
+</div>

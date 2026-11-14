@@ -1,0 +1,15 @@
+.select-wrapper {
+  display: inline-grid;
+  width: 100%;
+}
+
+.select-wrapper::after {
+  content: attr(data-selected-text);
+}
+
+#parentCategory {
+  width: 100%;
+  min-width: max-content;
+  box-sizing: border-box;
+  grid-area: 1 / 1;
+}

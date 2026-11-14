@@ -1,0 +1,24 @@
+<table class="category-table">
+  <thead>
+    <th scope="col" class="col-id">Id</th>
+    <th scope="col" class="col-name">Name</th>
+    <th scope="col" class="col-parent">Über-Kategorie</th>
+  </thead>
+  <tbody>
+    @for (cat of categoryList(); track cat.id) {
+      <tr>
+        <td>{{ cat.id }}</td>
+        <td>{{ cat.name }}</td>
+        @if (cat.parent) {
+          <td>{{ cat.parent.name }}</td>
+        } @else {
+          <td>-</td>
+        }
+      </tr>
+    } @empty {
+      <tr>
+        <td colspan="3" class="no-entry-text">Keine Einträge gefunden</td>
+      </tr>
+    }
+  </tbody>
+</table>
