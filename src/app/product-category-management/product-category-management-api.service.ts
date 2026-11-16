@@ -1,7 +1,7 @@
 import { inject, Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { ProductCategoryCreateRequest, ProductCategory } from './product-category-management.model';
-import { ProductCategoryApi } from '@lisa/catalog-api';
+import { ProductCategoryApi } from '@sebportfolio/lisa-catalog-api';
 
 @Injectable({
     providedIn: 'root',

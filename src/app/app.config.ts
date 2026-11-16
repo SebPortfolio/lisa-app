@@ -2,7 +2,7 @@ import { ApplicationConfig, provideZoneChangeDetection } from '@angular/core';
 import { provideRouter } from '@angular/router';
 import { provideHttpClient } from '@angular/common/http';
 import { routes } from './app.routes';
-import { BASE_PATH } from '@lisa/catalog-api';
+import { BASE_PATH } from '@sebportfolio/lisa-catalog-api';
 
 export const appConfig: ApplicationConfig = {
     providers: [

@@ -1,4 +1,8 @@
-import { ParentProductCategoryWdto, ProductCategoryCreateRequestWdto, ProductCategoryWdto } from '@lisa/catalog-api';
+import {
+    ParentProductCategoryWdto,
+    ProductCategoryCreateRequestWdto,
+    ProductCategoryWdto,
+} from '@sebportfolio/lisa-catalog-api';
 
 export type ProductCategory = ProductCategoryWdto;
 export type ParentProductCategory = ParentProductCategoryWdto;
