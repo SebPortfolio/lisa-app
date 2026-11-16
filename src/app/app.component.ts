@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { ProductCategoryManagementComponent } from './product-category-management/product-category-management.component';
 
 @Component({
     selector: 'app-root',
     standalone: true,
-    imports: [RouterOutlet],
+    imports: [ProductCategoryManagementComponent],
     templateUrl: './app.component.html',
     styleUrl: './app.component.less',
 })
